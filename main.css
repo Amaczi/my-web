@@ -1,58 +1,70 @@
+/** =========================================== **/
+/** Body Start **/
+/** =========================================== **/
+
+/** Body **/
 body{
-	background-image: url(background3.jpg);
-	background-size: 1920px 1080px;
-	background-repeat: no-repeat;
-	margin: 0 0 0 0;
+	margin: 0;
 	font-family: 'Quicksand', sans-serif;
+	background-image: url(background3.jpg);
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
+/** =========================================== **/
+/** Navbar Start **/
+/** =========================================== **/
 
-#topnav
-{
-	background-color: rgba(255,255,255,0.05);
-	height: 50px;
+/** Navbar Background **/	
+#topnav{
+	background-color: rgba(149, 165, 166,0.13);
+	height: 52px;
 	margin-top: 10px;
-
 }
 
-.menu
-{
+/** Navbar Menu **/
+.menu{
 	list-style-type: none;
 	margin: 0;
 	padding: 5px;
 	font-size: 20px;
-	min-height: 35px;
 	line-height: 200%;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 1px;
 }
 
-.menu > li
-{
+/** Navbar Menu Items **/
+.menu > li{
 	display: inline-block;
 	padding:0px 10px;
 }
 
-.menu a
-{
+/** Navbar Text **/
+.menu a{
 	color:#fff;
 	text-decoration: none;
 	padding: 12px;
 }
 
-.menu a:hover
-{
+/** Navbar Text Hover **/
+.menu a:hover{
 	color:white;
-	background: rgba(105, 105, 105, 0.2);
-	border-bottom: 3px solid #660066;
+	background: rgba(149, 165, 166, 0.2);
+	border-bottom: 2px solid #8e44ad;
 	transition: 1.5s;
+	border-radius: 8px;
 }
 
+/** Navbar Text Active - Html Class **/
 .menu a.active {
-    background: rgba(105, 105, 105, 0.2);
-    border-bottom: 3px solid #660066;
+    background: rgba(149, 165, 166, 0.2);
+    border-bottom: 3px solid #8e44ad;
+    border-radius: 6px;
 }
 
+/** Navbar Page Logo **/
 h1.logo{
 	color: white;
 	font-size: 35px;
@@ -62,164 +74,223 @@ h1.logo{
 	margin: 5px 50px;
 }
 
+/** Navbar Page Logo Hover **/
 h1.logo:hover{
 	cursor: pointer;
 }
 
-.cat{
-	height: 110px;
-	width: 400px;
-	float: left;
-	margin: 0px 50px;
-	background-color: rgba(33,33,33,0.3);
-	color: white;
-	-webkit-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-	-moz-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-	box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-}
+/** =========================================== **/
+/** Showcase Start **/
+/** =========================================== **/
 
+/** Showcase **/
 #showcase{
-	width: 1500px;
-	margin: 30px auto;
+	width: 1800px;
+	height: 560px;
+	margin: 80px auto;
+	color: white;
+	text-align: center;
 }
 
-
+/** Showcase Logo **/
 #showcase h1{
 	color: white;
-	text-align: center;
 	font-size: 30px;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 2px;
-	border-bottom: 2px solid #800080;
-	width: 100px;
-	margin: 10px auto;
-}
-
-.ico{
-	height: 110px;
-	width: 70px;
-	float: left;
-	font-size: 40px;
-}
-
-.ico i{
-	padding-top: 35px;
-	padding-left: 15px;
-}
-
-.text{
-	width: 260px;
-	height: 110px;
-	float: left;
-}
-
-.text p{
-	font-size: 14px;
-	margin: 0;
-}
-.text h4{
-	font-size: 22px;
-	margin-top: 20px;
-	margin: 20px 0 0 0;
-	font-family: 'Staatliches', cursive;
-}
-
-#showcase2{
-	width: 1280px;
-	height: 420px;
-	margin: 50px auto;
-	color: white;
-	text-align: center;
-}
-
-#showcase2 h1{
-	color: white;
-	font-size: 30px;
-	font-family: 'Staatliches', cursive;
-	letter-spacing: 2px;
-	border-bottom: 2px solid #800080;
-	width: 230px;
+	border-bottom: 2px solid #8e44ad;
+	width: 300px;
 	margin: 5px auto;
 	height: 48px;
 }
 
+/** Showcase box **/
 .project{
-	width: 600px;
-	height: 140px;
+	width: 560px;
+	height: 400px;
 	float: left;
-	background-color: rgba(33,33,33,0.4);
 	margin: 20px;
+	background-color: rgba(44, 62, 80,0.25);
+	border-radius: 25px;
 }
 
-.project2{
-	width: 600px;
-	height: 140px;
-	float: left;
-	background-color: rgba(33,33,33,0.4);
-	margin: 20px;
+.pion{
+	height: 30px;
+	width: 10px;
 }
 
+/** Showcase box image **/
 .projectimg{
 	width: 140px;
-	height: 130px;
-	padding-top: 10px;
+	height: 140px;
 	float:left;
+	margin-left: 75px;
 }
 
+.projectimg i{
+	font-size: 90px;
+	margin: 25px auto;
+}
+
+/** Showcase box image **/
 .projectimg img{
 	transition: 1.5s;
 }
 
+/** Showcase box image hover **/
 .projectimg img:hover{
 	transform: scale(1.1);
 }
 
+.projecthead{
+	height: 110px;
+	width: 250px;
+	margin-right: 75px;
+	padding:0px 10px;
+	font-family: 'Staatliches', cursive;
+	float: left;
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+.projecthead p{
+	margin: 0;
+	height: 110px;
+	text-align: center;
+}
+
+
+/** Showcase box text **/
 .projecttxt{
-	width: 420px;
-	height: 125px;
+	width: 460px;
+	height: 150px;
 	float: left;
 	text-align: justify;
+	font-size: 18px;
+	padding:0px 50px;
+}
+
+/** Project contact **/
+.projectkontakt{
+	float: left;
+	width: 230px;
+	height: 90px;
 	font-size: 14px;
-	padding-top: 15px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding:10px 0px 0px 50px;
+}
+
+/** Project contact button **/
+.projectkontakt a{
+	width: 240px;
+	height: 110px;
+	background-color: rgba(44, 62, 80,1);
+	padding: 10px 40px;
+	border-radius: 20px;
+	color: white;
+	transition: 2s;
+}
+
+/** Project setting **/
+.projectkontakt a:link{
+	text-decoration: none;
+}
+
+/** Project setting **/
+.projectkontakt a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+/** Project setting **/
+.projectkontakt a:hover{
+	cursor: pointer;
+	border-bottom: 3px solid #8e44ad;
 }
 
 
-#showcase3{
+/** Showcase box button **/
+.projectcennik{
+	float: left;
+	width: 230px;
+	height: 90px;
+	font-size: 14px;
+	padding:10px 0px 0px 50px;
+}
+
+/** Project contact button **/
+.projectcennik a{
+	width: 240px;
+	height: 110px;
+	background-color: rgba(44, 62, 80,1);
+	padding: 10px 40px;
+	border-radius: 20px;
+	color: white;
+	transition: 2s;
+}
+
+/** Project setting **/
+.projectcennik a:link{
+	text-decoration: none;
+}
+
+/** Project setting **/
+.projectcennik a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+/** Project setting **/
+.projectcennik a:hover{
+	cursor: pointer;
+	border-bottom: 3px solid #8e44ad;
+}
+
+
+/** =========================================== **/
+/** Contact Start **/
+/** =========================================== **/
+
+/** Contact **/
+#contact{
 	width: 1050px;
-	margin: 20px auto 60px;
+	height: 138px;
+	margin: 100px auto 20px auto;
 }
 
-#showcase3 h1{
+/** Contact Logo **/
+#contact h1{
 	color: white;
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 2px;
-	border-bottom: 2px solid #800080;
+	border-bottom: 2px solid #8e44ad;
 	width: 130px;
-	margin: 10px auto;
+	margin: 9px auto;
 }
 
-
-.cat3{
+/** Contact box **/
+.cbox{
 	height: 80px;
 	width: 310px;
 	float: left;
 	margin: 0px 20px;
-	background-color: rgba(33,33,33,0.3);
+	background-color: rgba(189, 195, 199,0.05);
 	color: white;
-	-webkit-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-	-moz-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-	box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
 	transition: 2s;
+	border-radius: 15px;
 }
 
-.cat3:hover{
+
+
+/** Contact box hover **/
+.cbox:hover{
 	transform: scale(1.1);
+	background-color: rgba(142, 68, 173,0.06);
+	border-bottom: 1px solid #9b59b6;
 }
 
+/** Contact Ico box **/
 .ico3{
 	height: 80px;
 	width: 80px;
@@ -227,21 +298,26 @@ h1.logo:hover{
 	font-size: 40px;
 }
 
+/** Contact Ico text **/
 .ico3 i{
 	padding-top: 20px;
 	padding-left: 20px;
 }
 
+/** Contact Text box **/
 .text3{
 	width: 210px;
 	height: 80px;
 	float: left;
 }
 
+/** Contact Text **/
 .text3 p{
 	font-size: 14px;
 	margin: 0;
 }
+
+/** Contact Box Main Text **/
 .text3 h4{
 	font-size: 22px;
 	margin: 15px 0 0 0;
@@ -249,26 +325,34 @@ h1.logo:hover{
 	letter-spacing: 2px;
 }
 
+/** =========================================== **/
+/** Footer Start **/
+/** =========================================== **/
 
+/** Footer Box **/
 #footer{
 	text-align: center;
 	color: white;
 	font-size: 16px;
-	background-color: rgba(33,33,33,0.1);
+	background-color: rgba(189, 195, 199,0.02);
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 1px;
 }
 
+/** Footer setting **/
 #footer a:link{
 	text-decoration: none;
 }
 
+/** Footer setting **/
 #footer a:visited{
 	text-decoration: none;
 	color: white;
 }
 
+/** Footer setting **/
 #footer a:hover{
 	color: #800080;
 	cursor: pointer;
 }
+
