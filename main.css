@@ -1,0 +1,274 @@
+body{
+	background-image: url(background3.jpg);
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+	margin: 0 0 0 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+#topnav
+{
+	background-color: rgba(255,255,255,0.05);
+	height: 50px;
+	margin-top: 10px;
+
+}
+
+.menu
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	font-size: 20px;
+	min-height: 35px;
+	line-height: 200%;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1px;
+}
+
+.menu > li
+{
+	display: inline-block;
+	padding:0px 10px;
+}
+
+.menu a
+{
+	color:#fff;
+	text-decoration: none;
+	padding: 12px;
+}
+
+.menu a:hover
+{
+	color:white;
+	background: rgba(105, 105, 105, 0.2);
+	border-bottom: 3px solid #660066;
+	transition: 1.5s;
+}
+
+.menu a.active {
+    background: rgba(105, 105, 105, 0.2);
+    border-bottom: 3px solid #660066;
+}
+
+h1.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 2.5px;
+	float: left;
+	font-family: 'Staatliches', cursive;
+	margin: 5px 50px;
+}
+
+h1.logo:hover{
+	cursor: pointer;
+}
+
+.cat{
+	height: 110px;
+	width: 400px;
+	float: left;
+	margin: 0px 50px;
+	background-color: rgba(33,33,33,0.3);
+	color: white;
+	-webkit-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
+	-moz-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
+	box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
+}
+
+#showcase{
+	width: 1500px;
+	margin: 30px auto;
+}
+
+
+#showcase h1{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #800080;
+	width: 100px;
+	margin: 10px auto;
+}
+
+.ico{
+	height: 110px;
+	width: 70px;
+	float: left;
+	font-size: 40px;
+}
+
+.ico i{
+	padding-top: 35px;
+	padding-left: 15px;
+}
+
+.text{
+	width: 260px;
+	height: 110px;
+	float: left;
+}
+
+.text p{
+	font-size: 14px;
+	margin: 0;
+}
+.text h4{
+	font-size: 22px;
+	margin-top: 20px;
+	margin: 20px 0 0 0;
+	font-family: 'Staatliches', cursive;
+}
+
+#showcase2{
+	width: 1280px;
+	height: 420px;
+	margin: 50px auto;
+	color: white;
+	text-align: center;
+}
+
+#showcase2 h1{
+	color: white;
+	font-size: 30px;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #800080;
+	width: 230px;
+	margin: 5px auto;
+	height: 48px;
+}
+
+.project{
+	width: 600px;
+	height: 140px;
+	float: left;
+	background-color: rgba(33,33,33,0.4);
+	margin: 20px;
+}
+
+.project2{
+	width: 600px;
+	height: 140px;
+	float: left;
+	background-color: rgba(33,33,33,0.4);
+	margin: 20px;
+}
+
+.projectimg{
+	width: 140px;
+	height: 130px;
+	padding-top: 10px;
+	float:left;
+}
+
+.projectimg img{
+	transition: 1.5s;
+}
+
+.projectimg img:hover{
+	transform: scale(1.1);
+}
+
+.projecttxt{
+	width: 420px;
+	height: 125px;
+	float: left;
+	text-align: justify;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+#showcase3{
+	width: 1050px;
+	margin: 20px auto 60px;
+}
+
+#showcase3 h1{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #800080;
+	width: 130px;
+	margin: 10px auto;
+}
+
+
+.cat3{
+	height: 80px;
+	width: 310px;
+	float: left;
+	margin: 0px 20px;
+	background-color: rgba(33,33,33,0.3);
+	color: white;
+	-webkit-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
+	-moz-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
+	box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
+	transition: 2s;
+}
+
+.cat3:hover{
+	transform: scale(1.1);
+}
+
+.ico3{
+	height: 80px;
+	width: 80px;
+	float: left;
+	font-size: 40px;
+}
+
+.ico3 i{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.text3{
+	width: 210px;
+	height: 80px;
+	float: left;
+}
+
+.text3 p{
+	font-size: 14px;
+	margin: 0;
+}
+.text3 h4{
+	font-size: 22px;
+	margin: 15px 0 0 0;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 2px;
+}
+
+
+#footer{
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	background-color: rgba(33,33,33,0.1);
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 1px;
+}
+
+#footer a:link{
+	text-decoration: none;
+}
+
+#footer a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+#footer a:hover{
+	color: #800080;
+	cursor: pointer;
+}
