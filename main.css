@@ -240,6 +240,7 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 /** Project setting **/
 .projectkontakt a:link{
 	text-decoration: none;
+	color: white;
 }
 
 /** Project setting **/
@@ -279,6 +280,7 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 /** Project setting **/
 .projectcennik a:link{
 	text-decoration: none;
+	color: white;
 }
 
 /** Project setting **/
