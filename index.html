@@ -16,31 +16,34 @@
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/> 
 		<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
-
 		<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+		<script src="timer.js"></script>
 	</head>
 <!-- Page info end -->
 
 <!-- ---------------------------------------------------------------- -->
 
 <!-- Page Body -->
-	<body>
+	<body onload="odliczanie();">
 
 <!-- ---------------------------------------------------------------- -->
 
 		<!-- Nav Container -->
 		<header>
 			<nav id="topnav">
-				<div id="test">
 				<h1 class="logo">Serwis FixIT</h1>
 				<ul class="menu">
-					<li><a href="index.html" class="active"><i class="fas fa-home"></i> Strona główna</a></li>
+					<li class="active"><a href="index.html"><i class="fas fa-home"></i> Strona główna</a></li>
 					<li><a href="cennik.html"><i class="fas fa-money-check-alt"></i> Cennik</a></li>
 					<li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
 					<li><a href="kontakt.html"><i class="fas fa-address-book"></i> Kontakt</a></li>
 				</ul>
-				<div style="clear: both;"></div>
+
+				<div id="zegarico">
+				<i class="far fa-clock"></i>
+				<div id="zegar">12:00:00</div>
 				</div>
+				<div style="clear: both;"></div>
 			</nav> 
 		</header>
 		<!-- Nav Container end -->
@@ -57,7 +60,20 @@
 					<div class="project">
 						<div class="projectimg"><i class="fas fa-desktop"></i></div>
 						<div  class="projecthead"><p>Naprawa komputerów stacjonarnych</p></div>
+
 						<div class="projecttxt">W tej kategorii oferujemy:</div>
+							<div class="projectli">
+							<ul class="t3xt">
+							<li>Wycena sprzętu</li>
+							<li>Wymiana podzespołów</li>
+							<li>Test sprawności</li>
+							<li>Serwis części</li>
+							<li>Renowacja zestawu</li>
+							</ul>
+							</div>
+
+
+						
 						<div class="projectkontakt"><a href="kontakt.html">Inwidualna wycena</a></div>
 						<div class="projectcennik"><a href="cennik.html">Cennik</a></div>
 						<div style="clear: both;"></div>
@@ -66,7 +82,16 @@
 					<div class="project">
 						<div class="projectimg"><i class="fas fa-laptop"></i></div>
 						<div  class="projecthead"><p>Naprawa laptopów oraz monitorów.</p></div>
-						<div class="projecttxt">W tej kategorii oferujemy:</div>
+							<div class="projecttxt">W tej kategorii oferujemy:</div>
+							<div class="projectli">
+							<ul class="t3xt">
+							<li>Wycena sprzętu</li>
+							<li>Wymiana podzespołów</li>
+							<li>Test Sprawności</li>
+							<li>Wymiana LCD</li>
+							<li>Renowacja urządzenia</li>
+							</ul>
+							</div>
 						<div class="projectkontakt"><a href="kontakt.html">Inwidualna wycena</a></div>
 						<div class="projectcennik"><a href="cennik.html">Cennik</a></div>
 						<div style="clear: both;"></div>
@@ -75,7 +100,16 @@
 					<div class="project">
 						<div class="projectimg"><i class="fas fa-tablet-alt"></i></div>
 						<div  class="projecthead"><p>Naprawa urządzeń mobilnych.</p></div>
-						<div class="projecttxt">W tej kategorii oferujemy:</div>
+							<div class="projecttxt">W tej kategorii oferujemy:</div>
+							<div class="projectli">
+							<ul class="t3xt">
+							<li>Wycena sprzętu</li>
+							<li>Wymiana wyświetlacza</li>
+							<li>Odzyskiwanie danych</li>
+							<li>Wymiana podzespołów</li>
+							<li>Montaż szkła ochronnego</li>
+							</ul>
+							</div>
 						<div class="projectkontakt"><a href="kontakt.html">Inwidualna wycena</a></div>
 						<div class="projectcennik"><a href="cennik.html">Cennik</a></div>
 						<div style="clear: both;"></div>
@@ -84,6 +118,8 @@
 				<div style="clear:both;"></div>
 				</div>
 				<!-- Showcase end -->
+
+<!-- ---------------------------------------------------------------- -->
 
 			<!-- Contact -->
 
@@ -139,7 +175,7 @@
 		<!-- Footer end -->
 
 <!-- ---------------------------------------------------------------- -->
-
+	
 	</body>
 	<!-- Body end -->
 
