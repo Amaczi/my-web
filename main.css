@@ -6,7 +6,7 @@
 body{
 	margin: 0;
 	font-family: 'Quicksand', sans-serif;
-	background-image: url(background3.jpg);
+	background-image: url(background6.jpg);
 	-webkit-background-size:cover;
 	background-size: cover;
 	background-position: center center;
@@ -17,20 +17,37 @@ body{
 /** Navbar Start **/
 /** =========================================== **/
 
-/** Navbar Background **/	
 #topnav{
-	background-color: rgba(149, 165, 166,0.13);
-	height: 52px;
-	margin-top: 10px;
+	margin-top: 15px;
+	background: rgba(47, 54, 64,0.5);
+	height: 50px;
+}
+
+/** Navbar Page Logo **/
+h1.logo{
+	float: left;
+	color: white;
+	font-size: 40px;
+	height: 50px;
+	letter-spacing: 2.5px;
+	font-family: 'Staatliches', cursive;
+	padding: 0;
+	margin: 0px 50px;
+}
+
+/** Navbar Page Logo Hover **/
+h1.logo:hover{
+	cursor: pointer;
 }
 
 /** Navbar Menu **/
 .menu{
-	list-style-type: none;
+	float: left;
+	height: 50px;
 	margin: 0;
-	padding: 5px;
+	padding: 0;
+	list-style-type: none;
 	font-size: 20px;
-	line-height: 200%;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 1px;
 }
@@ -38,46 +55,56 @@ body{
 /** Navbar Menu Items **/
 .menu > li{
 	display: inline-block;
-	padding:0px 10px;
+	padding: 13px 10px 10px;
+	margin: 0px 10px;
 }
 
 /** Navbar Text **/
 .menu a{
 	color:#fff;
 	text-decoration: none;
-	padding: 12px;
 }
 
 /** Navbar Text Hover **/
-.menu a:hover{
+.menu li:hover{
 	color:white;
-	background: rgba(149, 165, 166, 0.2);
-	border-bottom: 2px solid #8e44ad;
+	background-color: rgba(47, 54, 64,0.5);
+	border-bottom: 2px solid #8c7ae6;
 	transition: 1.5s;
 	border-radius: 8px;
 }
 
 /** Navbar Text Active - Html Class **/
-.menu a.active {
+.menu li.active {
     background: rgba(149, 165, 166, 0.2);
-    border-bottom: 3px solid #8e44ad;
+    border-bottom: 2px solid #8c7ae6;
     border-radius: 6px;
 }
 
-/** Navbar Page Logo **/
-h1.logo{
+#zegarico{
+	float: right;
 	color: white;
-	font-size: 35px;
-	letter-spacing: 2.5px;
-	float: left;
 	font-family: 'Staatliches', cursive;
-	margin: 5px 50px;
+	margin-right: 100px;
+	width: 110px;
+	height: 50px;
 }
 
-/** Navbar Page Logo Hover **/
-h1.logo:hover{
-	cursor: pointer;
+#zegarico i{
+	float: left;
+	color: white;
+	font-size: 25px;
+	margin: 12.5px 5px;
 }
+
+#zegar{
+	float: left;
+	font-size: 20px;
+	margin: 12.5px 0px;
+	letter-spacing: 2px;
+	width: 75px;
+	}
+
 
 /** =========================================== **/
 /** Showcase Start **/
@@ -98,7 +125,7 @@ h1.logo:hover{
 	font-size: 30px;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 2px;
-	border-bottom: 2px solid #8e44ad;
+	border-bottom: 2px solid #8c7ae6;
 	width: 300px;
 	margin: 5px auto;
 	height: 48px;
@@ -110,10 +137,14 @@ h1.logo:hover{
 	height: 400px;
 	float: left;
 	margin: 20px;
-	background-color: rgba(44, 62, 80,0.25);
+	background-color: rgba(53, 59, 72,0.3);
 	border-radius: 25px;
+	-webkit-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
+-moz-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
+box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 }
 
+/** Showcase box padding**/
 .pion{
 	height: 30px;
 	width: 10px;
@@ -127,6 +158,7 @@ h1.logo:hover{
 	margin-left: 75px;
 }
 
+/** Showcase box image **/
 .projectimg i{
 	font-size: 90px;
 	margin: 25px auto;
@@ -162,12 +194,27 @@ h1.logo:hover{
 
 /** Showcase box text **/
 .projecttxt{
-	width: 460px;
+	width: 230px;
 	height: 150px;
 	float: left;
 	text-align: justify;
 	font-size: 18px;
-	padding:0px 50px;
+	padding:0px 5px 0px 40px;
+}
+
+.projectli{
+	width: 260px;
+	height: 150px;
+	float: left;
+	text-align: justify;
+	font-size: 18px;
+	padding:0px 20px 0px 5px;
+}
+
+.t3xt{
+	margin: 0px;
+	list-style-type: none;
+	padding: 0px;
 }
 
 /** Project contact **/
@@ -184,7 +231,7 @@ h1.logo:hover{
 	width: 240px;
 	height: 110px;
 	background-color: rgba(44, 62, 80,1);
-	padding: 10px 40px;
+	padding: 10px 30px;
 	border-radius: 20px;
 	color: white;
 	transition: 2s;
@@ -205,6 +252,7 @@ h1.logo:hover{
 .projectkontakt a:hover{
 	cursor: pointer;
 	border-bottom: 3px solid #8e44ad;
+	padding: 10px 50px;
 }
 
 
@@ -243,6 +291,9 @@ h1.logo:hover{
 .projectcennik a:hover{
 	cursor: pointer;
 	border-bottom: 3px solid #8e44ad;
+	padding: 10px 60px;
+
+
 }
 
 
@@ -264,7 +315,7 @@ h1.logo:hover{
 	font-size: 30px;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 2px;
-	border-bottom: 2px solid #8e44ad;
+	border-bottom: 2px solid #8c7ae6;
 	width: 130px;
 	margin: 9px auto;
 }
@@ -286,8 +337,8 @@ h1.logo:hover{
 /** Contact box hover **/
 .cbox:hover{
 	transform: scale(1.1);
-	background-color: rgba(142, 68, 173,0.06);
-	border-bottom: 1px solid #9b59b6;
+	background-color: rgba(47, 54, 64,0.4);
+	border-bottom: 2px solid #8c7ae6;
 }
 
 /** Contact Ico box **/
@@ -352,7 +403,7 @@ h1.logo:hover{
 
 /** Footer setting **/
 #footer a:hover{
-	color: #800080;
+	color: #8c7ae6;
 	cursor: pointer;
 }
 
