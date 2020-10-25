@@ -393,6 +393,7 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 /** Footer setting **/
 #footer a:link{
 	text-decoration: none;
+	color: white;
 }
 
 /** Footer setting **/
