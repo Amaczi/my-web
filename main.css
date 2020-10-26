@@ -26,13 +26,19 @@ body{
 /** Navbar Page Logo **/
 h1.logo{
 	float: left;
-	color: white;
-	font-size: 40px;
 	height: 50px;
-	letter-spacing: 2.5px;
-	font-family: 'Staatliches', cursive;
 	padding: 0;
 	margin: 0px 50px;
+}
+
+h1.logo p{
+	font-size: 60px;
+	height: 50px;
+	color: white;
+	letter-spacing: 2px;
+	font-family: 'Cute Font', cursive;
+	padding: 0;
+	margin: -12.5px 0px;
 }
 
 /** Navbar Page Logo Hover **/
@@ -306,8 +312,8 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 /** Contact **/
 #contact{
 	width: 1050px;
-	height: 138px;
-	margin: 100px auto 20px auto;
+	height: 160px;
+	margin: 80px auto 20px auto;
 }
 
 /** Contact Logo **/
@@ -319,7 +325,8 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 	letter-spacing: 2px;
 	border-bottom: 2px solid #8c7ae6;
 	width: 130px;
-	margin: 9px auto;
+	margin: 10px auto;
+	height: 48px;
 }
 
 /** Contact box **/
@@ -333,8 +340,6 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 	transition: 2s;
 	border-radius: 15px;
 }
-
-
 
 /** Contact box hover **/
 .cbox:hover{
