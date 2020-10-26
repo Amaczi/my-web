@@ -5,46 +5,51 @@
 
 <!-- Page info -->
 	<head>
-		<meta charset="utf-8">
-		<title>Strona</title>
-		<meta name="description" content="Strona">
-		<meta name="keywords" content="Strona">
+
+		<title>Serwis FixIT</title>
+		<meta name="description" content="Serwis FixIT - Najniższe stawki na rynku!">
+		<meta name="keywords" content="Serwis FixIT">
 		<meta name="author" content="Damian Lampa">
+		
+		<meta charset="utf-8">
 		<meta http-equiv="X-Ua-Compatible" content="IE=edge">
-		<link rel="icon" href="favicon.png" type="image/png">
-		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+		<link rel="icon" href="files/favicon.ico" type="image/ico">
+
+		<link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Quicksand:wght@500&family=Staatliches&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/> 
-		<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-		<script src="timer.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+		<script src="files/timer.js"></script>
+
 	</head>
 <!-- Page info end -->
 
 <!-- ---------------------------------------------------------------- -->
 
 <!-- Page Body -->
-	<body onload="odliczanie();">
+	<body onload="timer();">
 
 <!-- ---------------------------------------------------------------- -->
 
 		<!-- Nav Container -->
 		<header>
 			<nav id="topnav">
+
 				<h1 class="logo"><p>Serwis FixIT</p></h1>
+
 				<ul class="menu">
-					<li class="active"><a href="index.html"><i class="fas fa-home"></i> Strona główna</a></li>
-					<li><a href="cennik.html"><i class="fas fa-money-check-alt"></i> Cennik</a></li>
-					<li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-					<li><a href="kontakt.html"><i class="fas fa-address-book"></i> Kontakt</a></li>
+					<li class="active"><a href="serwis-komputerowy-fixit"><i class="fas fa-home"></i> Strona główna</a></li>
+					<li><a href="cennik-seriws-fixit"><i class="fas fa-money-check-alt"></i> Cennik</a></li>
+					<li><a href="portfolio-serwis-fixit"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+					<li><a href="kontakt-serwis-fixit"><i class="fas fa-address-book"></i> Kontakt</a></li>
 				</ul>
 
-				<div id="zegarico">
-				<i class="far fa-clock"></i>
-				<div id="zegar">12:00:00</div>
+				<div id="clock">
+					<i class="far fa-clock"></i>
+					<div id="clocktimer">12:00:00</div>
 				</div>
+
 				<div style="clear: both;"></div>
+
 			</nav> 
 		</header>
 		<!-- Nav Container end -->
@@ -58,63 +63,76 @@
 
 					<h1>Nasza specjalizacja</h1>
 
-					<div class="project">
-						<div class="projectimg"><i class="fas fa-desktop"></i></div>
-						<div  class="projecthead"><p>Naprawa komputerów stacjonarnych</p></div>
+						<!-- Showcase PC -->
+						<div class="project">
 
-						<div class="projecttxt">W tej kategorii oferujemy:</div>
-							<div class="projectli">
-							<ul class="t3xt">
-							<li>Wycena sprzętu</li>
-							<li>Wymiana podzespołów</li>
-							<li>Test sprawności</li>
-							<li>Serwis części</li>
-							<li>Renowacja zestawu</li>
-							</ul>
-							</div>
+							<div class="projectimg"><i class="fas fa-desktop"></i></div>
+							<div  class="projecthead"><p>Naprawa komputerów stacjonarnych</p></div>
 
-
-						
-						<div class="projectkontakt"><a href="kontakt.html">Inwidualna wycena</a></div>
-						<div class="projectcennik"><a href="cennik.html">Cennik</a></div>
-						<div style="clear: both;"></div>
-					</div>
-					<div class="pion"></div>
-					<div class="project">
-						<div class="projectimg"><i class="fas fa-laptop"></i></div>
-						<div  class="projecthead"><p>Naprawa laptopów oraz monitorów.</p></div>
 							<div class="projecttxt">W tej kategorii oferujemy:</div>
-							<div class="projectli">
-							<ul class="t3xt">
-							<li>Wycena sprzętu</li>
-							<li>Wymiana podzespołów</li>
-							<li>Test Sprawności</li>
-							<li>Wymiana LCD</li>
-							<li>Renowacja urządzenia</li>
-							</ul>
-							</div>
-						<div class="projectkontakt"><a href="kontakt.html">Inwidualna wycena</a></div>
-						<div class="projectcennik"><a href="cennik.html">Cennik</a></div>
-						<div style="clear: both;"></div>
-					</div>
-					<div class="pion"></div>
-					<div class="project">
-						<div class="projectimg"><i class="fas fa-tablet-alt"></i></div>
-						<div  class="projecthead"><p>Naprawa urządzeń mobilnych.</p></div>
+								<div class="projectli">
+									<ul class="offer">
+										<li>Wycena sprzętu</li>
+										<li>Wymiana podzespołów</li>
+										<li>Test sprawności</li>
+										<li>Serwis części</li>
+										<li>Renowacja zestawu</li>
+									</ul>
+								</div>
+
+							<div style="clear: both;"></div>
+						</div>
+						<!-- Showcase PC End -->
+
+
+						<div class="pion"></div>
+
+
+						<!-- Showcase Laptop / Screen -->
+						<div class="project">
+
+							<div class="projectimg"><i class="fas fa-laptop"></i></div>
+							<div  class="projecthead"><p>Naprawa laptopów oraz monitorów.</p></div>
+
 							<div class="projecttxt">W tej kategorii oferujemy:</div>
-							<div class="projectli">
-							<ul class="t3xt">
-							<li>Wycena sprzętu</li>
-							<li>Wymiana wyświetlacza</li>
-							<li>Odzyskiwanie danych</li>
-							<li>Wymiana podzespołów</li>
-							<li>Montaż szkła ochronnego</li>
-							</ul>
+								<div class="projectli">
+									<ul class="offer">
+										<li>Wycena sprzętu</li>
+										<li>Wymiana podzespołów</li>
+										<li>Test Sprawności</li>
+										<li>Wymiana LCD</li>
+										<li>Renowacja urządzenia</li>
+									</ul>
+								</div>
+
+							<div style="clear: both;"></div>
 							</div>
-						<div class="projectkontakt"><a href="kontakt.html">Inwidualna wycena</a></div>
-						<div class="projectcennik"><a href="cennik.html">Cennik</a></div>
-						<div style="clear: both;"></div>
-					</div>
+							<!-- Showcase Laptop / Screen End -->
+
+
+							<div class="pion"></div>
+
+
+						<!-- Showcase Phone -->
+						<div class="project">
+
+							<div class="projectimg"><i class="fas fa-tablet-alt"></i></div>
+							<div  class="projecthead"><p>Naprawa urządzeń mobilnych.</p></div>
+
+							<div class="projecttxt">W tej kategorii oferujemy:</div>
+								<div class="projectli">
+									<ul class="offer">
+										<li>Wycena sprzętu</li>
+										<li>Wymiana wyświetlacza</li>
+										<li>Odzyskiwanie danych</li>
+										<li>Wymiana podzespołów</li>
+										<li>Montaż szkła ochronnego</li>
+									</ul>
+								</div>
+
+							<div style="clear: both;"></div>
+						</div>
+						<!-- Showcase Phone End -->
 
 				<div style="clear:both;"></div>
 				</div>
@@ -129,54 +147,60 @@
 				<h1>Kontakt</h1>
 
 				<!-- cbox Container -->
-				<a href="kontakt.html">
+				<a href="kontakt-serwis-fixit">
 					<div class="cbox">
-					<div class="ico3"><i class="fab fa-facebook-square"></i></div>
-					<div class="text3">
-						<h4>Facebook</h4>
-						<p>www.Facebook.com/SerwisFixIT</p>
-					</div>
+
+						<div class="ico3"><i class="fab fa-facebook-square"></i></div>
+						<div class="text3">
+							<h4>Facebook</h4>
+							<p>www.Facebook.com/SerwisFixIT</p>
+						</div>
+
 					</div>
 				</a>
 				<!-- cbox Container end -->
 
 				<!-- cbox Container -->
-				<a href="kontakt.html">
+				<a href="kontakt-serwis-fixit">
 					<div class="cbox">
-					<div class="ico3"><i class="fas fa-envelope"></i></div>
-					<div class="text3">
-						<h4>email</h4>
-						<p>serwis@fixit.com</p>
-					</div>
+
+						<div class="ico3"><i class="fas fa-envelope"></i></div>
+						<div class="text3">
+							<h4>Email</h4>
+							<p>serwis@fixit.com</p>
+						</div>
+
 					</div>
 				</a>
 				<!-- cbox Container end -->
 
 				<!-- cbox Container -->
-				<a href="kontakt.html">
+				<a href="kontakt-serwis-fixit">
 					<div class="cbox">
-					<div class="ico3"><i class="fas fa-phone-square"></i></div>
-					<div class="text3">
-						<h4>Numer tel</h4>
-						<p>+48 666 100 100</p>
-					</div>
+
+						<div class="ico3"><i class="fas fa-phone-square"></i></div>
+						<div class="text3">
+							<h4>Numer tel</h4>
+							<p>+48 666 100 100</p>
+						</div>
+
 					</div>
 				</a>
 				<!-- cbox Container end -->
 
 			<div style="clear: both;"></div>
-
 			</div>
 			<!-- Contact end -->
+
 		</main>
 		<!-- Main Container end -->
 
-		<!-- Footer -->
-		<footer><div id="footer"><i class="far fa-copyright"></i> <a href="https://www.facebook.com/title.username/">Damian Lampa</a> 2020. Wszelkie Prawa Zastrzeżone.</div></footer>
-		<!-- Footer end -->
-
 <!-- ---------------------------------------------------------------- -->
 	
+	<!-- Footer -->
+	<footer><div id="footer"><i class="far fa-copyright"></i> <a href="https://www.facebook.com/title.username/">Damian Lampa</a> 2020. Wszelkie Prawa Zastrzeżone.</div></footer>
+	<!-- Footer end -->
+
 	</body>
 	<!-- Body end -->
 

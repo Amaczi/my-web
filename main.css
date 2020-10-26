@@ -5,43 +5,45 @@
 /** Body **/
 body{
 	margin: 0;
+	padding: 0;
+	color: white;
 	font-family: 'Quicksand', sans-serif;
-	background-image: url(background6.jpg);
+	background-image: url(files/bg.jpg);
 	-webkit-background-size:cover;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	text-align: center;
 }
 
 /** =========================================== **/
 /** Navbar Start **/
 /** =========================================== **/
 
+/** Navbar **/
 #topnav{
 	margin-top: 15px;
 	background: rgba(47, 54, 64,0.5);
 	height: 50px;
 }
 
-/** Navbar Page Logo **/
+/** Navbar Logo **/
 h1.logo{
 	float: left;
 	height: 50px;
-	padding: 0;
 	margin: 0px 50px;
 }
 
+/** Navbar Logo **/
 h1.logo p{
 	font-size: 60px;
 	height: 50px;
-	color: white;
 	letter-spacing: 2px;
 	font-family: 'Cute Font', cursive;
-	padding: 0;
 	margin: -12.5px 0px;
 }
 
-/** Navbar Page Logo Hover **/
+/** Navbar Logo Hover **/
 h1.logo:hover{
 	cursor: pointer;
 }
@@ -65,16 +67,15 @@ h1.logo:hover{
 	margin: 0px 10px;
 }
 
-/** Navbar Text **/
+/** Navbar Menu Items Text **/
 .menu a{
 	color:#fff;
 	text-decoration: none;
 }
 
-/** Navbar Text Hover **/
+/** Navbar Menu Items Text Hover **/
 .menu li:hover{
-	color:white;
-	background-color: rgba(47, 54, 64,0.5);
+	background-color: rgba(149, 165, 166, 0.25);
 	border-bottom: 2px solid #8c7ae6;
 	transition: 1.5s;
 	border-radius: 8px;
@@ -87,30 +88,31 @@ h1.logo:hover{
     border-radius: 6px;
 }
 
-#zegarico{
+/** Navbar clock**/
+#clock{
 	float: right;
-	color: white;
 	font-family: 'Staatliches', cursive;
 	margin-right: 100px;
 	width: 110px;
 	height: 50px;
 }
 
-#zegarico i{
+/** Navbar clock Ico**/
+#clock i{
 	float: left;
-	color: white;
 	font-size: 25px;
 	margin: 12.5px 5px;
+	width: 25px;
 }
 
-#zegar{
+/** Navbar clock Text**/
+#clocktimer{
 	float: left;
 	font-size: 20px;
 	margin: 12.5px 0px;
 	letter-spacing: 2px;
 	width: 75px;
 	}
-
 
 /** =========================================== **/
 /** Showcase Start **/
@@ -119,22 +121,26 @@ h1.logo:hover{
 /** Showcase **/
 #showcase{
 	width: 1800px;
-	height: 560px;
+	height: 550px;
 	margin: 80px auto;
-	color: white;
-	text-align: center;
 }
 
 /** Showcase Logo **/
 #showcase h1{
-	color: white;
-	font-size: 30px;
+	font-size: 32px;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 2px;
 	border-bottom: 2px solid #8c7ae6;
 	width: 300px;
-	margin: 5px auto;
-	height: 48px;
+	margin: 4px auto;
+	height: 42px;
+	text-align: center;
+}
+
+/** Showcase box padding**/
+.pion{
+	height: 30px;
+	width: 0px;
 }
 
 /** Showcase box **/
@@ -146,14 +152,8 @@ h1.logo:hover{
 	background-color: rgba(53, 59, 72,0.3);
 	border-radius: 25px;
 	-webkit-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
--moz-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
-}
-
-/** Showcase box padding**/
-.pion{
-	height: 30px;
-	width: 10px;
+	-moz-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
+	box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 }
 
 /** Showcase box image **/
@@ -170,16 +170,6 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 	margin: 25px auto;
 }
 
-/** Showcase box image **/
-.projectimg img{
-	transition: 1.5s;
-}
-
-/** Showcase box image hover **/
-.projectimg img:hover{
-	transform: scale(1.1);
-}
-
 .projecthead{
 	height: 110px;
 	width: 250px;
@@ -194,7 +184,7 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 .projecthead p{
 	margin: 0;
 	height: 110px;
-	text-align: center;
+
 }
 
 
@@ -203,7 +193,6 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 	width: 230px;
 	height: 150px;
 	float: left;
-	text-align: justify;
 	font-size: 18px;
 	padding:0px 5px 0px 40px;
 }
@@ -212,96 +201,15 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 	width: 260px;
 	height: 150px;
 	float: left;
-	text-align: justify;
 	font-size: 18px;
 	padding:0px 20px 0px 5px;
 }
 
-.t3xt{
+.offer{
 	margin: 0px;
 	list-style-type: none;
 	padding: 0px;
-}
-
-/** Project contact **/
-.projectkontakt{
-	float: left;
-	width: 230px;
-	height: 90px;
-	font-size: 14px;
-	padding:10px 0px 0px 50px;
-}
-
-/** Project contact button **/
-.projectkontakt a{
-	width: 240px;
-	height: 110px;
-	background-color: rgba(44, 62, 80,1);
-	padding: 10px 30px;
-	border-radius: 20px;
-	color: white;
-	transition: 2s;
-}
-
-/** Project setting **/
-.projectkontakt a:link{
-	text-decoration: none;
-	color: white;
-}
-
-/** Project setting **/
-.projectkontakt a:visited{
-	text-decoration: none;
-	color: white;
-}
-
-/** Project setting **/
-.projectkontakt a:hover{
-	cursor: pointer;
-	border-bottom: 3px solid #8e44ad;
-	padding: 10px 50px;
-}
-
-
-/** Showcase box button **/
-.projectcennik{
-	float: left;
-	width: 230px;
-	height: 90px;
-	font-size: 14px;
-	padding:10px 0px 0px 50px;
-}
-
-/** Project contact button **/
-.projectcennik a{
-	width: 240px;
-	height: 110px;
-	background-color: rgba(44, 62, 80,1);
-	padding: 10px 40px;
-	border-radius: 20px;
-	color: white;
-	transition: 2s;
-}
-
-/** Project setting **/
-.projectcennik a:link{
-	text-decoration: none;
-	color: white;
-}
-
-/** Project setting **/
-.projectcennik a:visited{
-	text-decoration: none;
-	color: white;
-}
-
-/** Project setting **/
-.projectcennik a:hover{
-	cursor: pointer;
-	border-bottom: 3px solid #8e44ad;
-	padding: 10px 60px;
-
-
+	text-align: left;
 }
 
 
@@ -312,26 +220,26 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 /** Contact **/
 #contact{
 	width: 1050px;
-	height: 160px;
-	margin: 80px auto 20px auto;
+	height: 150px;
+	margin: 100px auto 10px auto;
+	text-align: justify;
 }
 
 /** Contact Logo **/
 #contact h1{
-	color: white;
 	text-align: center;
-	font-size: 30px;
+	font-size: 32px;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 2px;
 	border-bottom: 2px solid #8c7ae6;
 	width: 130px;
-	margin: 10px auto;
-	height: 48px;
+	margin: 0px auto 18px;
+	height: 42px;
 }
 
 /** Contact box **/
 .cbox{
-	height: 80px;
+	height: 78px;
 	width: 310px;
 	float: left;
 	margin: 0px 20px;
@@ -350,7 +258,7 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 
 /** Contact Ico box **/
 .ico3{
-	height: 80px;
+	height: 78px;
 	width: 80px;
 	float: left;
 	font-size: 40px;
@@ -358,29 +266,32 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 
 /** Contact Ico text **/
 .ico3 i{
-	padding-top: 20px;
+	padding-top: 18px;
 	padding-left: 20px;
 }
 
 /** Contact Text box **/
 .text3{
-	width: 210px;
-	height: 80px;
+	width: 230px;
+	height: 78px;
 	float: left;
+}
+
+/** Contact Box Main Text **/
+.text3 h4{
+	height: 30px;
+	font-size: 24px;
+	margin: 15px 0 0 0;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 2px;
 }
 
 /** Contact Text **/
 .text3 p{
 	font-size: 14px;
 	margin: 0;
-}
-
-/** Contact Box Main Text **/
-.text3 h4{
-	font-size: 22px;
-	margin: 15px 0 0 0;
-	font-family: 'Staatliches', cursive;
-	letter-spacing: 2px;
+	height: 25px;
+	margin: 0 0 10px 0;
 }
 
 /** =========================================== **/
@@ -389,8 +300,8 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 
 /** Footer Box **/
 #footer{
+	height: 20px;
 	text-align: center;
-	color: white;
 	font-size: 16px;
 	background-color: rgba(189, 195, 199,0.02);
 	font-family: 'Staatliches', cursive;
@@ -398,13 +309,7 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 }
 
 /** Footer setting **/
-#footer a:link{
-	text-decoration: none;
-	color: white;
-}
-
-/** Footer setting **/
-#footer a:visited{
+#footer a{
 	text-decoration: none;
 	color: white;
 }
@@ -413,5 +318,5 @@ box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 #footer a:hover{
 	color: #8c7ae6;
 	cursor: pointer;
+	transition: 0.5s;
 }
-
