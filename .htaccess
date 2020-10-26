@@ -1,0 +1,11 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule serwis-fixit index.html
+RewriteRule ceny-serwis-fixit cennik.html
+RewriteRule nasze-portfolio-fixit portfolio.html
+RewriteRule serwis-fixit-kontakt kontakt.html
