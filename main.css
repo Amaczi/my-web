@@ -1,274 +1,322 @@
+/** =========================================== **/
+/** Body Start **/
+/** =========================================== **/
+
+/** Body **/
 body{
-	background-image: url(background3.jpg);
-	background-size: 1920px 1080px;
-	background-repeat: no-repeat;
-	margin: 0 0 0 0;
-	font-family: 'Quicksand', sans-serif;
-}
-
-
-#topnav
-{
-	background-color: rgba(255,255,255,0.05);
-	height: 50px;
-	margin-top: 10px;
-
-}
-
-.menu
-{
-	list-style-type: none;
 	margin: 0;
-	padding: 5px;
-	font-size: 20px;
-	min-height: 35px;
-	line-height: 200%;
-	font-family: 'Staatliches', cursive;
-	letter-spacing: 1px;
-}
-
-.menu > li
-{
-	display: inline-block;
-	padding:0px 10px;
-}
-
-.menu a
-{
-	color:#fff;
-	text-decoration: none;
-	padding: 12px;
-}
-
-.menu a:hover
-{
-	color:white;
-	background: rgba(105, 105, 105, 0.2);
-	border-bottom: 3px solid #660066;
-	transition: 1.5s;
-}
-
-.menu a.active {
-    background: rgba(105, 105, 105, 0.2);
-    border-bottom: 3px solid #660066;
-}
-
-h1.logo{
+	padding: 0;
 	color: white;
-	font-size: 35px;
-	letter-spacing: 2.5px;
-	float: left;
-	font-family: 'Staatliches', cursive;
-	margin: 5px 50px;
+	font-family: 'Quicksand', sans-serif;
+	background-image: url(files/bg.jpg);
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
 }
 
+/** =========================================== **/
+/** Navbar Start **/
+/** =========================================== **/
+
+/** Navbar **/
+#topnav{
+	margin-top: 15px;
+	background: rgba(47, 54, 64,0.5);
+	height: 50px;
+}
+
+/** Navbar Logo **/
+h1.logo{
+	float: left;
+	height: 50px;
+	margin: 0px 50px;
+}
+
+/** Navbar Logo **/
+h1.logo p{
+	font-size: 60px;
+	height: 50px;
+	letter-spacing: 2px;
+	font-family: 'Cute Font', cursive;
+	margin: -12.5px 0px;
+}
+
+/** Navbar Logo Hover **/
 h1.logo:hover{
 	cursor: pointer;
 }
 
-.cat{
-	height: 110px;
-	width: 400px;
+/** Navbar Menu **/
+.menu{
 	float: left;
-	margin: 0px 50px;
-	background-color: rgba(33,33,33,0.3);
-	color: white;
-	-webkit-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-	-moz-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-	box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-}
-
-#showcase{
-	width: 1500px;
-	margin: 30px auto;
-}
-
-
-#showcase h1{
-	color: white;
-	text-align: center;
-	font-size: 30px;
-	font-family: 'Staatliches', cursive;
-	letter-spacing: 2px;
-	border-bottom: 2px solid #800080;
-	width: 100px;
-	margin: 10px auto;
-}
-
-.ico{
-	height: 110px;
-	width: 70px;
-	float: left;
-	font-size: 40px;
-}
-
-.ico i{
-	padding-top: 35px;
-	padding-left: 15px;
-}
-
-.text{
-	width: 260px;
-	height: 110px;
-	float: left;
-}
-
-.text p{
-	font-size: 14px;
+	height: 50px;
 	margin: 0;
-}
-.text h4{
-	font-size: 22px;
-	margin-top: 20px;
-	margin: 20px 0 0 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 20px;
 	font-family: 'Staatliches', cursive;
+	letter-spacing: 1px;
 }
 
-#showcase2{
-	width: 1280px;
-	height: 420px;
-	margin: 50px auto;
-	color: white;
+/** Navbar Menu Items **/
+.menu > li{
+	display: inline-block;
+	padding: 13px 10px 10px;
+	margin: 0px 10px;
+}
+
+/** Navbar Menu Items Text **/
+.menu a{
+	color:#fff;
+	text-decoration: none;
+}
+
+/** Navbar Menu Items Text Hover **/
+.menu li:hover{
+	background-color: rgba(149, 165, 166, 0.25);
+	border-bottom: 2px solid #8c7ae6;
+	transition: 1.5s;
+	border-radius: 8px;
+}
+
+/** Navbar Text Active - Html Class **/
+.menu li.active {
+    background: rgba(149, 165, 166, 0.2);
+    border-bottom: 2px solid #8c7ae6;
+    border-radius: 6px;
+}
+
+/** Navbar clock**/
+#clock{
+	float: right;
+	font-family: 'Staatliches', cursive;
+	margin-right: 100px;
+	width: 110px;
+	height: 50px;
+}
+
+/** Navbar clock Ico**/
+#clock i{
+	float: left;
+	font-size: 25px;
+	margin: 12.5px 5px;
+	width: 25px;
+}
+
+/** Navbar clock Text**/
+#clocktimer{
+	float: left;
+	font-size: 20px;
+	margin: 12.5px 0px;
+	letter-spacing: 2px;
+	width: 75px;
+	}
+
+/** =========================================== **/
+/** Showcase Start **/
+/** =========================================== **/
+
+/** Showcase **/
+#showcase{
+	width: 1800px;
+	height: 550px;
+	margin: 80px auto;
+}
+
+/** Showcase Logo **/
+#showcase h1{
+	font-size: 32px;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 2px;
+	border-bottom: 2px solid #8c7ae6;
+	width: 300px;
+	margin: 4px auto;
+	height: 42px;
 	text-align: center;
 }
 
-#showcase2 h1{
-	color: white;
-	font-size: 30px;
-	font-family: 'Staatliches', cursive;
-	letter-spacing: 2px;
-	border-bottom: 2px solid #800080;
-	width: 230px;
-	margin: 5px auto;
-	height: 48px;
+/** Showcase box padding**/
+.pion{
+	height: 30px;
+	width: 0px;
 }
 
+/** Showcase box **/
 .project{
-	width: 600px;
-	height: 140px;
+	width: 560px;
+	height: 400px;
 	float: left;
-	background-color: rgba(33,33,33,0.4);
 	margin: 20px;
+	background-color: rgba(53, 59, 72,0.3);
+	border-radius: 25px;
+	-webkit-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
+	-moz-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
+	box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
 }
 
-.project2{
-	width: 600px;
-	height: 140px;
-	float: left;
-	background-color: rgba(33,33,33,0.4);
-	margin: 20px;
-}
-
+/** Showcase box image **/
 .projectimg{
 	width: 140px;
-	height: 130px;
-	padding-top: 10px;
+	height: 140px;
 	float:left;
+	margin-left: 75px;
 }
 
-.projectimg img{
-	transition: 1.5s;
+/** Showcase box image **/
+.projectimg i{
+	font-size: 90px;
+	margin: 25px auto;
 }
 
-.projectimg img:hover{
-	transform: scale(1.1);
-}
-
-.projecttxt{
-	width: 420px;
-	height: 125px;
+.projecthead{
+	height: 110px;
+	width: 250px;
+	margin-right: 75px;
+	padding:0px 10px;
+	font-family: 'Staatliches', cursive;
 	float: left;
-	text-align: justify;
-	font-size: 14px;
-	padding-top: 15px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-
-#showcase3{
-	width: 1050px;
-	margin: 20px auto 60px;
-}
-
-#showcase3 h1{
-	color: white;
-	text-align: center;
 	font-size: 30px;
+	margin-top: 30px;
+}
+
+.projecthead p{
+	margin: 0;
+	height: 110px;
+
+}
+
+
+/** Showcase box text **/
+.projecttxt{
+	width: 230px;
+	height: 150px;
+	float: left;
+	font-size: 18px;
+	padding:0px 5px 0px 40px;
+}
+
+.projectli{
+	width: 260px;
+	height: 150px;
+	float: left;
+	font-size: 18px;
+	padding:0px 20px 0px 5px;
+}
+
+.offer{
+	margin: 0px;
+	list-style-type: none;
+	padding: 0px;
+	text-align: left;
+}
+
+
+/** =========================================== **/
+/** Contact Start **/
+/** =========================================== **/
+
+/** Contact **/
+#contact{
+	width: 1050px;
+	height: 150px;
+	margin: 100px auto 10px auto;
+	text-align: justify;
+}
+
+/** Contact Logo **/
+#contact h1{
+	text-align: center;
+	font-size: 32px;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 2px;
-	border-bottom: 2px solid #800080;
+	border-bottom: 2px solid #8c7ae6;
 	width: 130px;
-	margin: 10px auto;
+	margin: 0px auto 18px;
+	height: 42px;
 }
 
-
-.cat3{
-	height: 80px;
+/** Contact box **/
+.cbox{
+	height: 78px;
 	width: 310px;
 	float: left;
 	margin: 0px 20px;
-	background-color: rgba(33,33,33,0.3);
+	background-color: rgba(189, 195, 199,0.05);
 	color: white;
-	-webkit-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-	-moz-box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
-	box-shadow: 20px 20px 60px -18px rgba(102,0,102,0.67);
 	transition: 2s;
+	border-radius: 15px;
 }
 
-.cat3:hover{
+/** Contact box hover **/
+.cbox:hover{
 	transform: scale(1.1);
+	background-color: rgba(47, 54, 64,0.4);
+	border-bottom: 2px solid #8c7ae6;
 }
 
+/** Contact Ico box **/
 .ico3{
-	height: 80px;
+	height: 78px;
 	width: 80px;
 	float: left;
 	font-size: 40px;
 }
 
+/** Contact Ico text **/
 .ico3 i{
-	padding-top: 20px;
+	padding-top: 18px;
 	padding-left: 20px;
 }
 
+/** Contact Text box **/
 .text3{
-	width: 210px;
-	height: 80px;
+	width: 230px;
+	height: 78px;
 	float: left;
 }
 
-.text3 p{
-	font-size: 14px;
-	margin: 0;
-}
+/** Contact Box Main Text **/
 .text3 h4{
-	font-size: 22px;
+	height: 30px;
+	font-size: 24px;
 	margin: 15px 0 0 0;
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 2px;
 }
 
+/** Contact Text **/
+.text3 p{
+	font-size: 14px;
+	margin: 0;
+	height: 25px;
+	margin: 0 0 10px 0;
+}
 
+/** =========================================== **/
+/** Footer Start **/
+/** =========================================== **/
+
+/** Footer Box **/
 #footer{
+	height: 20px;
 	text-align: center;
-	color: white;
 	font-size: 16px;
-	background-color: rgba(33,33,33,0.1);
+	background-color: rgba(189, 195, 199,0.02);
 	font-family: 'Staatliches', cursive;
 	letter-spacing: 1px;
 }
 
-#footer a:link{
-	text-decoration: none;
-}
-
-#footer a:visited{
+/** Footer setting **/
+#footer a{
 	text-decoration: none;
 	color: white;
 }
 
+/** Footer setting **/
 #footer a:hover{
-	color: #800080;
+	color: #8c7ae6;
 	cursor: pointer;
+	transition: 0.5s;
 }
