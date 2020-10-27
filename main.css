@@ -123,6 +123,7 @@ h1.logo:hover{
 	width: 1800px;
 	height: 550px;
 	margin: 80px auto;
+
 }
 
 /** Showcase Logo **/
@@ -151,9 +152,7 @@ h1.logo:hover{
 	margin: 20px;
 	background-color: rgba(53, 59, 72,0.3);
 	border-radius: 25px;
-	-webkit-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
-	-moz-box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
-	box-shadow: 17px 35px 137px -40px rgba(44,44,84,1);
+
 }
 
 /** Showcase box image **/
@@ -352,63 +351,43 @@ h1.logo:hover{
 	color: white;
 }
 
-#neon{
-	margin-top: 150px;
-
-}
-
-#neon a{
+.neon{
 	position: relative;
-	display: inline-block;
-	padding: 15px 30px;
-	color: #2196f3;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	font-size: 24px;
 	overflow: hidden;
-	text-decoration: none;
 	transition: 0.2s;
+	border-radius: 25px;
 }
 
-#neon a:hover{
-	color: #255784;
-	background: #2196f3;
-	box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3, 0 0 80px #2196f3;
-	transition-delay: 1s;
-}
-
-#neon a span{
+.neon span{
 	position: absolute;
-	display: block;
-
 }
 
-#neon a span:nth-child(1){
+.neon:hover span:nth-child(1){
 	animation-name: neon1;
-  	animation-duration: 4s;
+  	animation-duration: 8s;
   	animation-iteration-count: infinite;
-  	animation-delay: 1s;
+  	animation-delay: 0s;
 }
 
-#neon a span:nth-child(3){
+.neon:hover span:nth-child(3){
 	animation-name: neon3;
-  	animation-duration: 4s;
+  	animation-duration: 8s;
   	animation-iteration-count: infinite;
-  	animation-delay:3s;
+  	animation-delay:4s;
 }
 
-#neon a span:nth-child(2){
+.neon:hover span:nth-child(2){
 	animation-name: neon2;
-  	animation-duration: 4s;
+  	animation-duration: 8s;
   	animation-iteration-count: infinite;
   	animation-delay:2s;
 }
 
-#neon a span:nth-child(4){
+.neon:hover span:nth-child(4){
 	animation-name: neon4;
-  	animation-duration: 4s;
+  	animation-duration: 8s;
   	animation-iteration-count: infinite;
-  	animation-delay:4s;
+  	animation-delay:6s;
 }
 
 @keyframes neon4 {
@@ -417,11 +396,11 @@ h1.logo:hover{
 	left: 0;
 	width: 2px;
 	height: 100%;
-	background: linear-gradient(360deg,transparent,#2196f3);
+	background: linear-gradient(360deg,transparent,rgba(140,122,230,0.45));
 	}
   to {
   	bottom: 100%;
-	transition: 1s;
+	transition: 2s;
 	}
 }
 
@@ -431,11 +410,11 @@ h1.logo:hover{
 	right: -100%;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(270deg,transparent,#2196f3);
+	background: linear-gradient(270deg,transparent,rgba(140,122,230,0.45));
 	}
   to {
   	right: 100%;
-	transition: 1s;
+	transition: 2s;
 	}
 }
 
@@ -445,11 +424,11 @@ h1.logo:hover{
 	right: 0;
 	width: 2px;
 	height: 100%;
-	background: linear-gradient(180deg,transparent,#2196f3);
+	background: linear-gradient(180deg,transparent,rgba(140,122,230,0.45));
 	}
   to {
   	top: 100%;
-	transition: 1s;
+	transition: 2s;
 	}
 }
 
@@ -459,10 +438,10 @@ h1.logo:hover{
 	left: -100%;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(90deg,transparent,#2196f3);
+	background: linear-gradient(90deg,transparent,rgba(140,122,230,0.45));
 	}
   to {
   	left: 100%;
-	transition: 1s;
+	transition: 2s;
 	}
 }
